@@ -1,0 +1,283 @@
+/* palette */
+$bear-coat: #8B6337;
+$bear-inner: #bb8a53;
+$bear-dark-bits: #372818;
+$bear-muzzle: #d1af8a;
+$bear-reds: #e35d6a;
+$forest: #a6d0a6;
+
+:root {
+   /* add font stack here */
+  --bear-coat: #8B6337;
+  --bear-inner: #bb8a53;
+  --bear-dark-bits: #372818;
+  --bear-muzzle: #d1af8a;
+  --bear-reds: #e35d6a;
+  --forest: #a6d0a6;
+  }
+  
+  body {
+    background: var(--forest);
+  } 
+
+  /* .thought-bubble-main
+     .thought-bubble-one
+     .thought-bubble-two*/
+
+.bear {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .right-cheek {
+    top: 15%;
+    left: 35%;
+    background: var(--bear-inner);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 60% 70% 60%;
+  }
+  
+  .left-cheek {
+    top: 15%;
+    left: 5%;
+    background: var(--bear-inner);
+    width: 60%;
+    height: 70%;
+    border-radius: 60% 70% 60% 70%;
+  }
+  
+ .left-eyebrow {
+    top: 35%;
+    left: 32%;
+    background: var(--bear-dark-bits);
+    width: 16%;
+    height: 3%;
+border-radius: 50%;
+transform: rotate(60deg);
+} 
+
+.belly {
+    top: 60%;
+    left: 2.5%;
+    background: var(--bear-inner);
+    width: 95%;
+    height: 100%;
+    border-radius: 120% 120% 100% 100%;
+  }
+  
+  .bear-top {
+    top: 10%;
+    left: 25%;
+    background: var(--bear-coat);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+  
+  .bear-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--bear-coat);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+  
+  .right-hand {
+    top: 0%;
+    left: -5%;
+    background: var(--bear-coat); 
+    width: 25%;
+    height: 60%;
+    border-radius: 20% 60% 50% 90%;
+    transform: rotate(60deg);
+    z-index: -1;
+  }
+  
+  .left-hand {
+    top: 0%;
+    left: 65%;
+    background: var(--bear-coat);
+    width: 30%;
+    height: 55%;
+    border-radius: 30% 50% 40% 100%;
+    transform: rotate(-60deg);
+    z-index: 1;
+    animation-name: chinscratch;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    transform-origin: center;
+  }
+  
+  .right-foot {
+    top: 85%;
+    left: 70%;
+    background: var(--bear-coat);
+    width: 15%;
+    height: 30%;
+    border-radius: 40% 70% 60% 60%;
+    transform: rotate(-80deg);
+    z-index: -2222;
+  }
+  
+  .left-foot {
+    top: 85%;
+    left: 15%;
+    background: var(--bear-coat);
+    width: 15%;
+    height: 30%;
+    border-radius: 80% 40% 60% 60%;
+    transform: rotate(80deg);
+    z-index: -2222;
+  }
+  
+  .belly-button {
+    top: 65%;
+    right: 45%;
+    background: var(--bear-dark-bits);
+    width: 10%;
+    height: 5%;
+    border-radius: 50%;  
+    z-index: 1;
+}
+
+  .right-eye {
+    top: 35%;
+    left: 60%;
+    background: darken($bear-dark-bits, 30%);
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+  
+  .left-eye {
+    top: 35%;
+    left: 25%;
+    background: darken($bear-dark-bits, 30%);
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+  }
+  
+  .refl {
+    top: 25%;
+    left: 15%;
+    background: lighten($bear-muzzle, 20%);
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+  
+  .muzzle {
+    top: 50%;
+    left: 35%;
+    background: var(--bear-muzzle);
+    width: 30%;
+    height: 30%;
+    border-radius: 60%;
+  }
+  
+  
+  .nose {
+    top: 50%;
+    left: 40%;
+    background: darken($bear-dark-bits, 10%);
+    width: 20%;
+    height: 12%;
+    border-radius: 50%;
+  }
+  
+  .mouth {
+    top: 65%;
+    left: 42%;
+    background: var(--bear-reds);
+    width: 16%;
+    height: 3%;
+    border-radius: 50%;
+  }
+  
+ .ear-right {
+    top: -5%;
+    left: 75%;
+    background: var(--bear-coat);
+    width: 35%;
+    height: 35%;
+    border-radius: 90%;
+  }
+
+.ear-left {
+    top: -5%;
+    right: 75%;
+    background: var(--bear-coat);
+    width: 35%;
+    height: 35%;
+    border-radius: 90%;
+} 
+
+
+
+.thought-bubble {
+  position: relative;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    color: white;
+  }
+
+
+  .bear * {
+    position: absolute;
+  }
+
+/* animations */
+
+@keyframes chinscratch {
+  0% {transform: rotate(-60deg);}
+  50% {transform: rotate(-55deg);}
+  100% {transform: rotate(-50deg);}
+} 
+
+/* .thought-bubble * {
+  position: absolute;
+} */
+
+/* unused classes:
+.blush-left {
+    top: 50%;
+    left: 50%;
+    background: $bear-inner;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+
+.ear-lobe-right {
+    top: 1%;
+    left: 85%;
+    background: $bear-inner;
+    width: 15%;
+    height: 15%;
+    border-radius: 90%;
+} 
+/* 
+.thought-bubble-main {
+    position: absolute;  
+    top: 10%;
+    left: 65%;
+    background: #fff;
+    width: 50%;
+    height: 25%;
+    border-radius: 90%;
+    border: 1px solid black;
+} */
+
+/*.ear-lobe-left {} 
+*/
+  
+
