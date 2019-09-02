@@ -1,6 +1,6 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/sobolewska/pen/vzBYYx.
+A Pen created at CodePen.io. You can find this one at [https://codepen.io/sobolewska/pen/vzBYYx](https://codepen.io/sobolewska/pen/vzBYYx).
 
-Now lives on Heroku! https://kinder-poppy-67683.herokuapp.com/
+[Now lives on Heroku!](https://kinder-poppy-67683.herokuapp.com/)
 
 ### Db setup:
 
